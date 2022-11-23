@@ -199,9 +199,9 @@ SETTINGS = {
     "PHL": {
         "IBF_API_URL": IBF_URL,
         "PASSWORD": IBF_PASSWORD,
-        "mock": False,
+        "mock": True,
         "placeCodeInitial": 'PHL',
-        "if_mock_trigger": False,
+        "if_mock_trigger": True,
         "notify_email": True,
         "placecodeLen":9, #LENGTH OF CHARS IN ADMIN3 PLACECODE -LENGTH OF CHARS IN COUNTRYCODEiso
         "glofasReturnPeriod":'rl5',
@@ -254,9 +254,9 @@ SETTINGS = {
 
 # Change this date only in case of specific testing purposes
 
-CURRENT_DATE = date.today()
+#CURRENT_DATE = date.today()
 
-#CURRENT_DATE=date.today() - timedelta(1) # to use yesterday's date
+CURRENT_DATE=date.today() - timedelta(1) # to use yesterday's date
 # if data folder should be downloaded from google drive 
 GOOGLE_DRIVE_DATA_URL = 'https://drive.google.com/file/d/14MbG4uFPGJCduM5aLkvgSGqA8io6Gh9C/view?usp=sharing'
 
